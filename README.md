@@ -8,7 +8,7 @@
     appSecret "申请Mob的AppSecret"
 
     ShareSDK {
-        //平台配置信息
+        //平台配置信息 http://bbs.mob.com/forum.php?mod=viewthread&tid=275&page=1&extra=#pid860
         devInfo {
             Wechat {
                 appId "wx4868b35061f87885"

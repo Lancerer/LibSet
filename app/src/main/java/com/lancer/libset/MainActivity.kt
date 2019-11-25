@@ -2,8 +2,10 @@ package com.lancer.libset
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import cn.sharesdk.framework.loopshare.MobLinkAPI
 import cn.sharesdk.onekeyshare.OnekeyShare
 import com.orhanobut.logger.Logger
+import com.umeng.analytics.MobclickAgent
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,8 +13,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Logger.d("log日志系统")
         initData()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        MobclickAgent.onResume(this)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        MobclickAgent.onPause(this)
+
     }
 
     private fun initData() {

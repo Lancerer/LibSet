@@ -5,7 +5,8 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        //友盟统计
+        maven { url 'https://dl.bintray.com/umsdk/release' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
@@ -15,6 +16,7 @@ buildscript {
 
         //shareSDK
         classpath "com.mob.sdk:MobSDK:2018.0319.1724"
+
     }
 }
 
@@ -22,7 +24,8 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        //友盟统计
+        maven { url 'https://dl.bintray.com/umsdk/release' }
     }
 }
 
